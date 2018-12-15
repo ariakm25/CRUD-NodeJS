@@ -20,3 +20,6 @@ app.listen(3000, () => {
 });  
 
 app.use('/anggota', anggotaController);
+app.get('/', (req,res) =>{
+    res.redirect("/anggota/list");
+});
