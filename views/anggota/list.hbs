@@ -1,0 +1,25 @@
+<h3><a href="/anggota" class="btn btn-secondary mb-1"><i class="fa fa-plus"></i> Tambah anggota</a> {{judul}}</h3>
+
+<table class="table table-stripped">
+    <thead>
+        <tr>
+            <td>Nama</td>
+            <td>Email</td>
+            <td>No.HP</td>
+            <td>Edit/Hapus</td>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+         <tr>
+             <td>{{this.nama}}</td>
+             <td>{{this.email}}</td>
+             <td>{{this.hp}}</td>
+             <td>
+                 <a href="/anggota/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a> 
+                  <a href="/anggota/delete/{{this._id}}" onclick="return confirm('Hapus data ini ?')"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+             </td>
+         </tr>   
+        {{/each}}
+    </tbody>
+</table>
