@@ -1,7 +1,7 @@
 # CRUD-NodeJS (Express + MongoDB)
 
-config Database Model/db.js
+config Database : /Model/db.js
 
-RUN : NPM START
+run : npm start
 
 http://localhost:3000
